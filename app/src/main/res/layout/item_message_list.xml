@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="4dp">
+
+    <TextView
+        android:id="@+id/ID_name_of_messenger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+
+    <TextView
+        android:layout_below="@id/ID_name_of_messenger"
+        android:id="@+id/ID_last_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        tools:text="Last sent message"/>
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/light_dark_grey"
+      android:layout_below="@id/ID_last_message">
+
+
+  </FrameLayout>
+
+</RelativeLayout>

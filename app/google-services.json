@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "66852918697",
+    "firebase_url": "https://on-the-road-bla-bla-car-egypt.firebaseio.com",
+    "project_id": "on-the-road-bla-bla-car-egypt",
+    "storage_bucket": "on-the-road-bla-bla-car-egypt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:66852918697:android:343c6b755b9f1d8d",
+        "android_client_info": {
+          "package_name": "com.ride.travel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "66852918697-ukeqaiksre2b46eda2jaj4ia4p1539q6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmXm1IiccXFHFB8PZ2tQxAwSyG7OdsTJw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

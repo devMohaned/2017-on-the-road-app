@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/ID_done_my_message"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+
+            android:src="@drawable/ic_done_black_48dp">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/ID_message_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/message"
+            android:layout_marginTop="4dp"
+            android:layout_toStartOf="@id/ID_done_my_message" />
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

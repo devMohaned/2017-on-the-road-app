@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ID_add_ride_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/add_ride" />
+
+
+    <TextView
+        android:id="@+id/ID_formate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_map"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".rides.AddRideActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ID_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/starting_point"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/ID_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/ending_point"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+
+            <LinearLayout
+                android:id="@+id/ID_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_below="@id/ID_from">
+
+
+                <fragment
+                    android:id="@+id/ID_city_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/city_1"
+                    android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                    />
+
+                <fragment
+                    android:id="@+id/ID_city_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/city_2"
+                    android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                    />
+
+                <!--<EditText-->
+                    <!--android:id="@+id/ID_city_1"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginEnd="4dp"-->
+                    <!--android:layout_marginStart="4dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:hint="@string/city_1" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/ID_city_2"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginEnd="4dp"-->
+                    <!--android:layout_marginStart="4dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:hint="@string/city_2" />-->
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/ID_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ID_linear_layout"
+                android:layout_margin="4dp"
+                android:hint="@string/description" />
+
+
+            <TextView
+                android:id="@+id/ID_txt_place_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ID_description"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:text="@string/travel_time"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <LinearLayout
+                android:id="@+id/ID_timing_of_ride"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_below="@id/ID_txt_place_holder">
+
+                <Spinner
+                    android:id="@+id/ID_day_of_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/ID_month_of_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/ID_year_of_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ID_txt_fare_place_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ID_timing_of_ride"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:text="@string/fare"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+
+            <EditText
+                android:id="@+id/ID_fare"
+                android:layout_below="@id/ID_txt_fare_place_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:hint="@string/fare"
+                android:maxLength="3"
+                android:inputType="number"/>
+
+            <Button
+                android:id="@+id/ID_add_map_starting_ending_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/HomePageButtons"
+                android:layout_below="@id/ID_fare"
+                android:layout_centerHorizontal="true"
+                android:text="@string/preview"
+                android:background="@color/home_page_button"/>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ID_add_ride_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddRideActivity" />
+
+
+</LinearLayout>

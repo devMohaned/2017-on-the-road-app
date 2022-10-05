@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".rating.GiveRatingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ID_rating_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/rating" />
+
+    <RelativeLayout
+        android:id="@+id/ID_my_rating_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/ID_my_rating_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Name"
+            android:layout_margin="4dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <RatingBar
+            android:theme="@style/RatingBar"
+            android:id="@+id/ID_my_rating_bar"
+            android:layout_below="@id/ID_my_rating_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.RatingBar.Small"
+            android:numStars="5"
+            android:layout_marginStart="4dp"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/ID_my_rating_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/ID_my_rating_bar"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_below="@id/ID_my_rating_name"
+            android:text="0"
+            android:textColor="@color/orange_item_two"
+            android:layout_marginStart="2dp"/>
+
+
+        <TextView
+            android:id="@+id/ID_view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_below="@id/ID_my_rating_score"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="4dp"/>
+
+
+        <Button
+            android:id="@+id/ID_give_rating_button"
+            style="@style/HomePageButtons"
+            android:layout_below="@id/ID_view_all"
+            android:text="@string/give_rating"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ID_rating_recycler_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+    <LinearLayout
+        android:id="@+id/ID_search_using_email_linear_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/rate_using_email"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_margin="4dp"/>
+
+        <EditText
+            android:id="@+id/ID_rating_email_of_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/write_email_of_user"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/ID_search_using_email_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            style="@style/HomePageButtons"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/ID_rating_progressBar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:id="@+id/ID_rating_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/ID_rating_name_of_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            tools:text="Name of user"
+            android:layout_margin="4dp"
+           />
+
+
+
+        <RatingBar
+            android:theme="@style/RatingBar"
+            android:layout_below="@+id/ID_rating_name_of_user"
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:numStars="5"
+            android:rating="1"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/ID_rating_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingBar"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="Rating"
+            android:gravity="center"
+            />
+
+
+        <EditText
+            android:layout_below="@id/ID_rating_text"
+            android:id="@+id/ID_rating_feedback_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/feedback"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:layout_below="@id/ID_rating_feedback_edittext"
+            android:id="@+id/ID_submit_rating_btn"
+            android:text="Submit"
+            style="@style/HomePageButtons"/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

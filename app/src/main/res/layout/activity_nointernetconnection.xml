@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/sad_image_view"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sleeping_emoji"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/plz_connect"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/sad_image_view"
+        android:text="@string/noInternetConnection"
+        android:textSize="24sp"/>
+
+
+    <Button
+        android:id="@+id/ID_retry_button_no_connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plz_connect"
+        android:layout_centerHorizontal="true"
+        android:text="Retry"/>
+
+
+
+</RelativeLayout>

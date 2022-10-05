@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_page_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/ID_splash_screen"
+            layout="@layout/splash_screen"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/ID_popup_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:text="@string/pop_up_message"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ID_current_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:text="Name of user"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/ID_find_drivers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/home_page_button"
+                android:gravity="center"
+                android:text="@string/find_drivers" />
+
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/ID_find_passengers"
+                style="@style/HomePageButtons"
+                android:text="@string/find_passenger" />
+
+            <Button
+                android:id="@+id/ID_rides_available"
+                style="@style/HomePageButtons"
+                android:text="@string/ridesAvailable" />
+
+
+            <Button
+                android:id="@+id/ID_my_rides"
+                style="@style/HomePageButtons"
+                android:text="@string/my_rides" />
+
+
+            <Button
+                android:id="@+id/ID_messages"
+                style="@style/HomePageButtons"
+                android:text="@string/messages" />
+
+            <Button
+                android:id="@+id/ID_give_rating"
+                style="@style/HomePageButtons"
+                android:text="@string/rating"/>
+
+
+            <Button
+                android:id="@+id/ID_log_out"
+                style="@style/HomePageButtons"
+                android:text="@string/logout" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ID_fb_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_facebook" />
+
+            <ImageView
+                android:id="@+id/ID_linkedIn_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_linked_in">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/ID_tumblr_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_tumblr">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/ID_google_plus_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_google_plus">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/ID_twitter_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_twitter">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/ID_any_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/icon_share">
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

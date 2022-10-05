@@ -1,0 +1,117 @@
+<resources>
+    <string name="facebook_app_id">2146075109019912</string>
+    <string name="fb_login_protocol_scheme">fb2146075109019912</string>
+    <string name="app_name">On The Road</string>
+
+    <string name="title_activity_home_page">HomePage</string>
+
+    <!-- Strings related to Settings -->
+
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="auth_failed">Failed in logging in, please check the Email &amp; Password.</string>
+    <string name="auth_sucess">Logging in Successfully</string>
+    <string name="dontHaveAccount">Don\'t have an account? Register</string>
+    <string name="auth_register_success">Register success, Sending verification E-mail</string>
+    <string name="auth_register_failed">Registering failed, check email, or try again later.</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+
+
+    <string name="noInternetConnection">Please connect to internet.</string>
+    <string name="registeration_user_name">User Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="show_password">Show Password</string>
+    <string name="register">Register</string>
+    <string name="User_name_colon">User name:</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="gps_disabled">GPS is disabled</string>
+    <string name="find_travelers">Find Travelers</string>
+    <string name="creating_new_account_using_facebook_failed">Creating new account using Facebook, has failed</string>
+    <string name="failed_in_making_new_account">Creating new account has failed</string>
+    <string name="double_click_to_open_profile">Double click to open profile</string>
+    <string name="find_passenger">Find Passengers on the road</string>
+    <string name="bad_internet_connection">No internet connection</string>
+    <string name="you_have_searched_for">You\'ve searched for</string>
+    <string name="loading">Loading</string>
+    <string name="sign_up">Sign up</string>
+
+    <!--<string name="fb_app_id">378000159292717</string>-->
+    <string name="action_favorite">Favourite</string>
+    <string name="message">Message</string>
+    <string name="all_fields_must_be_filled">All fields must be filled</string>
+    <string name="failed_in_sending_email_verification">Failed in sending email verification</string>
+    <string name="empty_username">Empty Name</string>
+    <string name="empty_email">Empty Email</string>
+    <string name="you_cannot_have_space_in_password">Space in password</string>
+    <string name="empty_password">Empty password</string>
+    <string name="password_should_have_eight_plus">You should have more than 8 letters</string>
+    <string name="password_are_not_matched">Passwords do not match</string>
+    <string name="please_wait">Please wait</string>
+    <string name="cannot_find_user">Cannot find a user</string>
+    <string name="name_of_user">Name of user:</string>
+    <string name="from">From</string>
+    <string name="From">From</string>
+    <string name="starting_point">Starting Point</string>
+    <string name="ending_point">Destination</string>
+    <string name="add_starting_point_to_the_map">Add Starting point on the map</string>
+    <string name="ok">Okay</string>
+    <string name="add_ending_point_to_the_map">Add Destination on the map</string>
+    <string name="destination">Destination</string>
+    <string name="city_1">From City 1</string>
+    <string name="city_2">To City 2</string>
+    <string name="description">Describe, or write any details</string>
+    <string name="locate_on_map"><![CDATA[Add Starting Point & Destination On Map]]></string>
+    <string name="no_map">Select your starting point</string>
+    <string name="select_your_destination">Select your destination</string>
+    <string name="all_done">Everything is done, Click Post in the toolbar</string>
+    <string name="travel_time">Date of travel</string>
+    <string name="ridesAvailable">Timed Rides</string>
+    <string name="add_ride">Add Ride</string>
+    <string name="post">Post</string>
+    <string name="to">to</string>
+    <string name="messages">Messages</string>
+    <string name="no_messages">No messages available</string>
+    <string name="search">Search</string>
+    <string name="write_exactly_your_destination">Write your exact destination(City)</string>
+    <string name="City">City</string>
+    <string name="find_drivers">Find Drivers on the road</string>
+    <string name="double_click_to_chat">Double click to chat</string>
+    <string name="chat_with">Chat with</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="show">Show</string>
+    <string name="choose_target">Select your destination</string>
+    <string name="logout">Logout</string>
+    <string name="pop_up_message">On The Road</string>
+    <string name="you_are_visible_as_passenger">You\'re visible as passenger on the map</string>
+    <string name="choose_destination">Destination</string>
+    <string name="rides">Rides</string>
+    <string name="error_no_location_found">Please wait until your location is found</string>
+    <string name="error">Error</string>
+    <string name="use_has_no_specific_target">No target found</string>
+    <string name="add_starting_and_ending_point">Add your starting and ending point</string>
+    <string name="my_rides">My Rides</string>
+    <string name="is_your_destination">is your destination</string>
+    <string name="starting_and_ending_point">Starting point and destination</string>
+    <string name="search_using_method">Search using</string>
+    <string name="preview">Preview on map</string>
+    <string name="no_place_found">Can\'t find place</string>
+    <string name="fare">Fare Price</string>
+    <string name="write_email_of_user">Email</string>
+    <string name="rate_using_email">Give a rating using email</string>
+    <string name="rating">Rating</string>
+    <string name="give_rating">Give Rating</string>
+    <string name="feedback">Your Feedback</string>
+    <string name="admob_app_id">ca-app-pub-7003413723788424~3405081099</string>
+
+</resources>

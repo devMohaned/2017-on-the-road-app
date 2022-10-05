@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <ImageView
+        android:src="@drawable/baseline_visibility_off_black_36"
+        android:id="@+id/ID_hide_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+
+    <RadioGroup
+        android:layout_below="@id/ID_hide_search"
+        android:id="@+id/ID_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp">
+
+        <RadioButton
+            android:id="@+id/ID_radioStartingPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/starting_point" />
+
+        <RadioButton
+            android:id="@+id/ID_radioEndingPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/ending_point" />
+        <RadioButton
+            android:id="@+id/ID_radioStartingAndEndingPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/starting_and_ending_point"
+            />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ID_txt_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/starting_point"
+        android:layout_below="@id/ID_radioGroup"
+        android:layout_margin="8dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"/>
+
+    <fragment
+        android:id="@+id/ID_search_ride_city_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ID_txt_1"
+        android:hint="@string/city_1"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        />
+
+    <TextView
+        android:id="@+id/ID_txt_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ending_point"
+        android:layout_below="@id/ID_search_ride_city_1"
+        android:layout_margin="8dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"/>
+
+
+    <fragment
+        android:id="@+id/ID_search_ride_city_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/ID_txt_2"
+        android:hint="@string/city_2"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        />
+
+
+    <Button
+        android:id="@+id/ID_search_button_for_ride"
+        style="@style/HomePageButtons"
+        android:layout_below="@id/ID_search_ride_city_2"
+        android:text="@string/search"/>
+
+
+
+</RelativeLayout>

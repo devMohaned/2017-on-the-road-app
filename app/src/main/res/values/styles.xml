@@ -1,0 +1,114 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <!--40E0D0-->
+
+        <item name="colorPrimary">#b3cde0</item>
+        <item name="colorPrimaryDark">#7d8f9c</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <style name="MyAccountTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:actionMenuTextColor">#FFFA7A</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:actionMenuTextColor">@color/white</item>-->
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="settingTextViewAndEditTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="talent_choosing_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">@color/golden_orange</item>
+    </style>
+
+
+    <style name="myAccountStyle">
+        <item name="android:textColor">#e91e63</item>
+    </style>
+
+    <style name="myGalleryStyle">
+        <item name="android:textColor">#9c27b0</item>
+    </style>
+
+    <style name="myFollowStyle">
+        <item name="android:textColor">#673ab7</item>
+    </style>
+
+    <style name="myContestsStyle">
+        <item name="android:textColor">#3f51b5</item>
+    </style>
+
+
+    <style name="mySettingsStyle">
+        <item name="android:textColor">#2196f3</item>
+    </style>
+
+    <style name="myAdminStyle">
+        <item name="android:textColor">#03a9f4</item>
+    </style>
+
+    <style name="myLogoutStyle">
+        <item name="android:textColor">#f44336</item>
+    </style>
+
+    <style name="mySearchStyle">
+        <item name="android:textColor">#ffc107</item>
+    </style>
+
+
+    <style name="LoginAutoCompleteTextView">
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/black</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#F0E68C</item>
+        <item name="colorControlActivated">#FFD700</item>
+    </style>
+
+
+    <style name="HomePageButtons">
+
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:background">@color/home_page_button</item>
+
+    </style>
+
+    <color name="home_page_button">#6497b1</color>
+</resources>

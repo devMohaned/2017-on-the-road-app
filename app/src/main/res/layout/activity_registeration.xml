@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_page_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/ID_registeration_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/home_page_button"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="@string/register" />
+
+        <EditText
+            android:id="@+id/usernameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/registeration_user_name"
+            android:inputType="textPersonName" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/passwordID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/confirmPasswordID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/passwordID"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword" />
+
+            <CheckBox
+                android:id="@+id/CheckboxPaswordID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/confirmPasswordID"
+                android:text="@string/show_password" />
+
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/emailID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress" />
+
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/registerButtonID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:background="@color/home_page_button"
+            android:text="@string/register" />
+
+        <ProgressBar
+            android:id="@+id/ID_registeration_progressBar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
